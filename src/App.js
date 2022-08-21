@@ -6,6 +6,7 @@ import FooterComponent from './components/FooterComponent';
 import CreateEmployeeComponent from './components/CreateEmployeeComponent';
 import UpdateEmployeeComponent from "./components/UpdateEmployeeComponent";
 import ViewEmployeeComponent from "./components/ViewEmployeeComponent";
+import LoginPage from "./components/LoginPage";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <div className='container'>
                 <Switch>
                     <Route path='/' exact component={ListEmployeeComponent}></Route>
+                    <Route path='/login' component={LoginPage}></Route>
                     <Route path='/employees' component={ListEmployeeComponent}></Route>
                     <Route path='/add-employee' component={CreateEmployeeComponent}></Route>
                     <Route path='/update-employee/:id' component={UpdateEmployeeComponent}></Route>
